@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calc | design</title>
+    <!-- styles link -->
+    <link rel="stylesheet" href="public/css/styles.css" />
+    <!-- js scrip tag -->
+  </head>
+  <body>
+    <!-- main container -->
+    <section class="main">
+      <div class="head-container">
+        <!-- sub heading -->
+        <div class="c-head">
+          <h3>c</h3>
+        </div>
+        <!-- theme conatiner -->
+        <div class="theme-container">
+          <h4>themes</h4>
+          <!-- index container -->
+          <div class="indices">
+            <div class="numbers">
+              <span class="theme-btn-1">1</span>
+              <span class="theme-btn-2">2</span>
+              <span class="theme-btn-3">3</span>
+            </div>
+            <div class="switch-container">
+              <div class="switch"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- screen container -->
+      <div class="screen-container">
+        <h2 id="screen" class="screen">0</h2>
+      </div>
+      <!-- all buttons -->
+      <div class="button-board">
+        <div class="row-1 box">
+          <button class="digit" value="7">7</button>
+          <button class="digit" value="8">8</button>
+          <button class="digit" value="9">9</button>
+          <button class="del-btn">del</button>
+        </div>
+        <div class="row-2 box">
+          <button class="digit" value="4">4</button>
+          <button class="digit" value="5">5</button>
+          <button class="digit" value="6">6</button>
+          <button class="plus operator" id="plus" value="+">+</button>
+        </div>
+        <div class="row-3 box">
+          <button class="digit" value="1">1</button>
+          <button class="digit" value="2">2</button>
+          <button class="digit" value="3">3</button>
+          <button class="minus operator" id=" minus" value="-">-</button>
+        </div>
+        <div class="row-4 box">
+          <button>.</button>
+          <button>0</button>
+          <button class="divide operator" id=" divide" value="/">/</button>
+          <button class="mult operator" id="multiply" value="x">x</button>
+        </div>
+        <div class="row-5">
+          <span>
+            <button id="clear" value="" class="reset-btn">reset</button>
+          </span>
+          <span>
+            <button class="eq-btn" id="equal">=</button>
+          </span>
+        </div>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module" src="/public/js/main.js"></script>
+  </body>
+</html>
