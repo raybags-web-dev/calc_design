@@ -13,7 +13,7 @@ function alljQuery() {
           },
           100
         )
-        .css({ background: "#303755" });
+        .css({ background: "#ff0000" });
       $(this).css({ "box-shadow": "0px 0px 2px #cbecee" });
       $(".screen-container").css({
         background: "#182133",
@@ -25,8 +25,8 @@ function alljQuery() {
         color: "#fff",
         background: "#182133",
       });
-      $(".del-btn").css({ background: "#303755" });
-      $(".reset-btn, .eq-btn").css({ background: "#303755", color: "#fff" });
+      $(".del-btn, .eq-btn").css({ background: "#ff0000" });
+      $(".reset-btn").css({ background: "#303755", color: "#fff" });
       $(".switch-container").css({ background: "#182133" });
       $(".button-board").css({ background: "#182133" });
       $(".numbers span").css({ background: "#182133" });

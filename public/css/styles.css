@@ -142,7 +142,7 @@ body {
   width: 2rem;
   height: 1.5rem;
   padding: 0.2rem;
-  background: var(--bg2);
+  background: var(--clr-red);
   transition: var(--transition);
   border-radius: 2rem;
 }
@@ -187,7 +187,7 @@ button {
   width: 100%;
   min-height: 90%;
   margin: 0.1rem;
-  font-weight: 600;
+  font-weight: 700;
   font-style: italic;
   color: var(--clr-white);
   opacity: 0.8;
@@ -225,15 +225,18 @@ button:active {
   width: 100%;
   gap: 0.5rem;
 }
-.reset-btn,
-.del-btn {
+.reset-btn {
   background: var(--bg5);
   color: var(--clr-white);
 }
 
+.del-btn {
+  background: var(--clr-red);
+}
+
 .eq-btn {
   font-size: 1.5rem;
-  background: var(--bg5);
+  background: var(--clr-red);
   color: var(--clr-white);
 }
 .minus,
@@ -254,17 +257,22 @@ button:active {
   button {
     width: 100%;
     min-height: 100%;
-    font-weight: 600;
+    font-weight: 700;
     padding: 1rem;
-    color: var(--clr-white);
+    color: var(--bg3);
     opacity: 0.8;
     font-style: italic;
     text-transform: uppercase;
     border-radius: var(--radius);
     cursor: pointer;
-    font-size: larger;
+    font-size: 32px;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    background: var(--bg3);
+    background: var(--clr-white);
+  }
+  .reset-btn,
+  .eq-btn {
+    font-weight: 600;
+    font-size: 25px;
   }
 }
