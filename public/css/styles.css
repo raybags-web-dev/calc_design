@@ -165,6 +165,7 @@ body {
   letter-spacing: 0.4rem;
   background: var(--bg3);
   box-shadow: var(--dark-inset-shadow);
+  overflow: hidden;
 }
 /* toggle zero effect class */
 .toggle_zero {

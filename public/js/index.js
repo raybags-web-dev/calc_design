@@ -124,8 +124,6 @@ function alljQuery() {
         arr.push(num);
         $("#screen").html(sum);
         len = inputVal.innerHTML.split("");
-        console.log(len);
-        //console.log(arr);
       });
       $(".operator").on("click", function (e) {
         e.preventDefault();
@@ -142,8 +140,20 @@ function alljQuery() {
 
       $("#equal").on("click", function () {
         let total = eval(sum);
-        //$("#screen").attr('value', total);
+        $("#screen").attr("value", total);
         $("#screen").html(total % 1 != 0 ? total.toFixed(2) : total);
+      });
+
+      // delete button functionality
+      $("#delete").on("click", function () {
+        let text = $("#screen").html();
+        text = text.slice(0, -1);
+
+        $("#screen").html(text);
+
+        if (text.length == 0) {
+          $("#screen").text(0);
+        }
       });
 
       $("#clear").on("click", function () {
