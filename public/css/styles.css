@@ -100,7 +100,7 @@ body {
 }
 .numbers {
   padding-bottom: 1rem;
-  color: var(--clr-red);
+  color: var(--clr-white);
 }
 .numbers * {
   padding: 0.3rem;
